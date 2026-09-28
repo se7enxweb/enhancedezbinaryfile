@@ -2,7 +2,7 @@
 <software>
     <metadata>
         <name>Enhanced eZBinary File Type</name>
-        <version>4.4.1</version>
+        <version>4.4.2</version>
         <copyright>Copyright (C) 2010 Contactivity, 1999-2010 eZ Systems AS</copyright>
         <license>GNU General Public License v2.0 (or any later version)</license>
         <info_url>https://github.com/se7enxweb/enhancedezbinaryfile</info_url>

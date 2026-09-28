@@ -43,7 +43,7 @@ class enhancedezbinaryfileInfo
     {
         return array(
             'Name' => "enhancedezbinaryfile",
-            'Version' => "4.4.1",
+            'Version' => "4.4.2",
             'Copyright' => "Copyright (c) 2010 Contactivity B.V.",
             'Info_url' => "https://github.com/se7enxweb/enhancedezbinaryfile",
             'License' => "GNU General Public License v2.0 (or any later version)"

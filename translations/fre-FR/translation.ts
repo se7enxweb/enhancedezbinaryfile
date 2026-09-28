@@ -22,7 +22,11 @@
 			<source>No file uploaded.</source>
 			<translation>Aucun fichier envoyé.</translation>
 		</message>
-	</context>
+	    <message>
+        <source>%filename successfully uploaded.</source>
+        <translation>%filename envoyé avec succès.</translation>
+    </message>
+</context>
 	<context>
 		<name>design/standard/user</name>
 		<message>

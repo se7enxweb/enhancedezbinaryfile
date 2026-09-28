@@ -20,7 +20,7 @@
 			{/if}
 		{/foreach}
 	{/if}
-{$attribute.data_text|parsexml("OriginalFilename")|wash} {'succesfully uploaded.'|i18n( 'design/standard/content/datatype' )}
+{'%filename successfully uploaded.'|i18n( 'design/standard/content/datatype',, hash( '%filename', $attribute.data_text|parsexml( "OriginalFilename" )|wash ) )}
 	{if $inGroup}
 		{if eq($attribute.data_text|filecheck,true)}
 			{if $mail} {*text*}

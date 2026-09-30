@@ -1,6 +1,6 @@
 {
     "name": "se7enxweb/enhancedezbinaryfile",
-    "description": "eZ Publish Legacy extension which provides a simple solution for extending thet default eZ Publish Binary File Datatype with support for uploadable files for collected information nodes. Great for smart developers!",
+    "description": "Exponential Legacy extension which provides a simple solution for extending the default Exponential Binary File Datatype with support for uploadable files for collected information nodes. Great for smart developers!",
     "type": "ezpublish-legacy-extension",
     "keywords": [ "eZ Publish", "eZ Publish Legacy", "eZ Publish Platform", "upload", "binary files", "save", "information collection" ],
     "homepage": "https://github.com/se7enxweb/enhancedezbinaryfile",

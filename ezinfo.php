@@ -42,7 +42,7 @@ class enhancedezbinaryfileInfo
     static function info()
     {
         return array(
-            'Name' => "enhancedezbinaryfile",
+            'Name' => "Enhanced eZBinary File Type",
             'Version' => "4.4.2",
             'Copyright' => "Copyright (c) 2010 Contactivity B.V.",
             'Info_url' => "https://github.com/se7enxweb/enhancedezbinaryfile",

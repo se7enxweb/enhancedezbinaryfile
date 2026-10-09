@@ -775,7 +775,7 @@ class EnhancedeZBinaryFileType extends eZDataType
         $destinationPath = eZSys::storageDirectory() . '/original/' . $mimeTypeCategory . '/';
         if ( !file_exists( $destinationPath ) )
         {
-            $oldumask = umask( 0 );
+            $oldumask = umask( self::creationUmask() );
             if ( !eZDir::mkdir( $destinationPath, eZDir::directoryPermission(), true ) )
             {
                 umask( $oldumask );
@@ -807,6 +807,17 @@ class EnhancedeZBinaryFileType extends eZDataType
         require_once( 'kernel/classes/ezclusterfilehandler.php' );
         $fileHandler = eZClusterFileHandler::instance();
         $fileHandler->fileStore( $destinationPath . $basename, 'binaryfile', true );
+    }
+
+    /**
+     * The umask to create the storage directory with: eZFile::creationUmask() of the kernel, which keeps it within
+     * EZP_FILE_MODE_MAX / EZP_DIR_MODE_MAX (0 without them, as before); on a kernel without that helper 0.
+     *
+     * @return int
+     */
+    private static function creationUmask()
+    {
+        return method_exists( 'eZFile', 'creationUmask' ) ? eZFile::creationUmask() : 0;
     }
 
 }

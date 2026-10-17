@@ -1,43 +1,6 @@
 {* Move this file to full and a non-overriden class will pick this up*}
-<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
-<!--
-{literal}
-function checkAll()
-{
-{/literal}
-    if ( document.fullview.selectall.value == "{'Select all'|i18n('design/standard/node/view')}" )
-{literal}
-    {
-{/literal}
-        document.fullview.selectall.value = "{'Deselect all'|i18n('design/standard/node/view')}";
-{literal}
-        with (document.fullview)
-	{
-            for (var i=0; i < elements.length; i++)
-	    {
-                if (elements[i].type == 'checkbox' && elements[i].name == 'DeleteIDArray[]')
-                     elements[i].checked = true;
-	    }
-        }
-     }
-     else
-     {
-{/literal}
-         document.fullview.selectall.value = "{'Select all'|i18n('design/standard/node/view')}";
-{literal}
-         with (document.fullview)
-	 {
-            for (var i=0; i < elements.length; i++)
-	    {
-                if (elements[i].type == 'checkbox' && elements[i].name == 'DeleteIDArray[]')
-                     elements[i].checked = false;
-	    }
-         }
-     }
-}
-{/literal}
-//-->
-</SCRIPT>
+{* "Select all" ticks the remove boxes: design/standard/javascript/enhancedezbinaryfile_debug_form.js *}
+{ezscript( array( 'enhancedezbinaryfile_debug_form.js' ) )}
 
 {* Default object admin view template *}
 {default with_children=true()
@@ -156,12 +119,13 @@ function checkAll()
         {section show=$:can_remove}
 	<td align="right" width="1">
 	{section show=$:item.object.can_remove}
-             <input type="checkbox" name="DeleteIDArray[]" value="{$Child:item.node_id}" />
+             <input type="checkbox" name="DeleteIDArray[]" value="{$Child:item.node_id}" aria-label="{$Child:item.name|wash}" />
         {/section}
 	</td>
         {/section}
 	<td>
-        <a href={$:item.url_alias|ezurl}>{node_view_gui view=line content_node=$:item}</a>
+        {* the line view links the item itself (a link around it would be an empty one) *}
+        {node_view_gui view=line content_node=$:item}
 
 {*        {node_view_gui view=line content_node=$:item} *}
 	</td>
@@ -173,7 +137,7 @@ function checkAll()
 	</td>
 	{section show=eq($node.sort_array[0][0],'priority')}
 	<td width="40" align="left">
-	    <input type="text" name="Priority[]" size="2" value="{$Child:item.priority}">
+	    <input type="text" name="Priority[]" size="2" value="{$Child:item.priority}" aria-label="{"Priority"|i18n("design/standard/node/view")|wash}: {$Child:item.name|wash}">
         <input type="hidden" name="PriorityID[]" value="{$Child:item.node_id}">
 	</td>
 	{/section}
@@ -209,7 +173,7 @@ function checkAll()
     list_count*}
     {section show=$list_count}
             <input type="submit" name="RemoveButton" value="{'Remove'|i18n('design/standard/node/view')}" />
-		<input name="selectall" onclick=checkAll() type="button" value="{'Select all'|i18n('design/standard/node/view')}">
+		<input name="selectall" type="button" value="{'Select all'|i18n('design/standard/node/view')}" data-enhancedezbinaryfile-check-all="1" data-select-all="{'Select all'|i18n('design/standard/node/view')|wash}" data-deselect-all="{'Deselect all'|i18n('design/standard/node/view')|wash}">
     {/section}
     {/section}
 

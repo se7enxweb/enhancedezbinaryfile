@@ -17,11 +17,11 @@
     </message>
     <message>
         <source>Remove</source>
-        <translation>Usuń</translation>
+        <translation>Usunąć</translation>
     </message>
     <message>
         <source>Remove collection.</source>
-        <translation>Usuń zbiór.</translation>
+        <translation>Usunąć zbiór.</translation>
     </message>
 </context>
 <context>
@@ -71,11 +71,11 @@
     </message>
     <message>
         <source>Remove</source>
-        <translation>Usuń</translation>
+        <translation>Usunąć</translation>
     </message>
     <message>
         <source>Remove the file from this draft.</source>
-        <translation>Usuń plik z tej wersji roboczej.</translation>
+        <translation>Usunąć plik z tej wersji roboczej.</translation>
     </message>
     <message>
         <source>%filename successfully uploaded.</source>
@@ -97,11 +97,11 @@
     <name>design/standard/node/view</name>
     <message>
         <source>Select all</source>
-        <translation>Zaznacz wszystko</translation>
+        <translation>Zaznaczyć wszystko</translation>
     </message>
     <message>
         <source>Deselect all</source>
-        <translation>Odznacz wszystko</translation>
+        <translation>Odznaczyć wszystko</translation>
     </message>
     <message>
         <source>Name</source>
@@ -121,19 +121,19 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edytuj</translation>
+        <translation>Edytować</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Kopiuj</translation>
+        <translation>Kopiować</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation>Zaktualizuj</translation>
+        <translation>Zaktualizować</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>Usuń</translation>
+        <translation>Usunąć</translation>
     </message>
 </context>
 <context>
@@ -151,7 +151,7 @@
 		<name>design/base</name>
 		<message>
 			<source>Send</source>
-			<translation>Wyślij</translation>
+			<translation>Wysłać</translation>
 		</message>
 	</context>
 	<context>

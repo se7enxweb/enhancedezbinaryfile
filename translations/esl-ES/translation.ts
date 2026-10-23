@@ -55,7 +55,7 @@
     </message>
     <message>
         <source>Filename</source>
-        <translation>Nombre del fichero</translation>
+        <translation>Nombre del archivo</translation>
     </message>
     <message>
         <source>MIME type</source>
@@ -191,7 +191,7 @@
     </message>
     <message>
         <source>A valid file is required.</source>
-        <translation>Se requiere un fichero válido.</translation>
+        <translation>Se requiere un archivo válido.</translation>
     </message>
     <message>
         <source>The size of the uploaded file exceeds the limit set by the upload_max_filesize directive in php.ini.</source>

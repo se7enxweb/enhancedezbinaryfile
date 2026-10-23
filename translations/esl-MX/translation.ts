@@ -55,7 +55,7 @@
     </message>
     <message>
         <source>Filename</source>
-        <translation>Nombre del fichero</translation>
+        <translation>Nombre del archivo</translation>
     </message>
     <message>
         <source>MIME type</source>

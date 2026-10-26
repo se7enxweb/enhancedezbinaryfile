@@ -8,6 +8,10 @@
         <comment>Datatype name</comment>
         <translation>Enhanced File</translation>
     </message>
+    <message>
+        <source>Enhanced File</source>
+        <translation>Enhanced File</translation>
+    </message>
 </context>
 <context>
     <name>kernel/classes/datatypes</name>
@@ -39,6 +43,10 @@
     <message>
         <source>The size of the uploaded file exceeds the maximum upload size: %1 bytes.</source>
         <translation>The size of the uploaded file exceeds the maximum upload size: %1 bytes.</translation>
+    </message>
+    <message>
+        <source>Enhanced File</source>
+        <translation>Enhanced File</translation>
     </message>
 </context>
 <context>
@@ -145,6 +153,10 @@
     <message>
         <source>No file uploaded.</source>
         <translation>No file uploaded.</translation>
+    </message>
+    <message>
+        <source>succesfully uploaded.</source>
+        <translation>succesfully uploaded.</translation>
     </message>
 </context>
 <context>

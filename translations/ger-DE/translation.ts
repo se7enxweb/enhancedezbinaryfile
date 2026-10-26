@@ -33,6 +33,10 @@
         <comment>Datatype name</comment>
         <translation>Erweiterte Datei</translation>
     </message>
+    <message>
+        <source>Enhanced File</source>
+        <translation>Erweiterte Datei</translation>
+    </message>
 </context>
 <context>
     <name>kernel/classes/datatypes</name>
@@ -64,6 +68,10 @@
     <message>
         <source>Failed to store file. Only the following file types are allowed: %1.</source>
         <translation>Die Datei konnte nicht gespeichert werden. Nur die folgenden Dateitypen sind erlaubt: %1.</translation>
+    </message>
+    <message>
+        <source>Enhanced File</source>
+        <translation>Erweiterte Datei</translation>
     </message>
 </context>
 <context>
@@ -145,6 +153,10 @@
     <message>
         <source>No file uploaded.</source>
         <translation>Keine Datei hochgeladen.</translation>
+    </message>
+    <message>
+        <source>succesfully uploaded.</source>
+        <translation>erfolgreich hochgeladen.</translation>
     </message>
 </context>
 <context>

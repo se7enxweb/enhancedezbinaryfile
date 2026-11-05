@@ -43,7 +43,7 @@ class enhancedezbinaryfileInfo
     {
         return array(
             'Name' => "Enhanced eZBinary File Type",
-            'Version' => "4.4.14",
+            'Version' => "4.4.15",
             'Copyright' => "Copyright (c) 2010 Contactivity B.V.",
             'Info_url' => "https://github.com/se7enxweb/enhancedezbinaryfile",
             'License' => "GNU General Public License v2.0 (or any later version)"
